@@ -9,6 +9,10 @@ button {
   background-color: #EF875B;
 }
 
-p {
+#result {
+  display: none;
+}
+
+#order-again {
   display: none;
 }

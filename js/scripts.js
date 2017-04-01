@@ -12,16 +12,27 @@ $(function(){
     event.preventDefault();
 
     var pizzaSize = parseInt($("input:radio[name=size]:checked").val());
-    var newPizza = new Pizza (pizzaSize);
+    var newPizza = new Pizza(pizzaSize);
 
     $("input:checkbox[name=topping]:checked").each(function(){
       var inputToppings = $(this).val();
       newPizza.toppings.push(inputToppings);
     });
 
-    $("#pizza-toppings").text(newPizza.toppings);
+    newPizza.toppings.forEach(function(topping){
+      $("ul").append("<li>" + topping + "</li>");
+    });
     $("#price").text(newPizza.sizePrice());
-    $("p").show();
-    console.log(newPizza);
+    $("#result").show();
+    $("button#order").hide();
+    $("button#order-again").show();
+
+  });
+  $("button#order-again").click(function() {
+    $("form")[0].reset();
+    $("ul.output-list").empty();
+    $("button#order").show();
+    $("#result").hide();
+    $("button#order-again").hide();
   });
 });

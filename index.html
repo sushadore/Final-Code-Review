@@ -15,13 +15,13 @@
     <form>
       <div class="form-group">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <h3>Toppings:</h3>
             <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="cheese">cheese</label>
+              <label><input type="checkbox" name="topping" value="marinara">marinara</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" name="topping" value="marinara">marinara</label>
+              <label><input type="checkbox" name="topping" value="cheese">cheese</label>
             </div>
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="anchovies">anchovies</label>
@@ -35,6 +35,9 @@
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="sausage">sausage</label>
             </div>
+          </div>
+          <div class="col-sm-4">
+            <h3></h3>
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="artichokes">artichokes</label>
             </div>
@@ -54,7 +57,7 @@
               <label><input type="checkbox" name="topping" value="pineapple">pineapple</label>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <h3>Size:</h3>
             <div class="radio">
               <label><input type="radio" name="size" value="0">small - 12 inch</label>
@@ -68,12 +71,18 @@
             <div class="radio">
               <label><input type="radio" name="size" value="6">extra large - 18 inch</label>
             </div>
-            <button type="submit" class="btn">Order pizza!</button>
-            <p>The total for your <span id=pizza-size></span> pizza topped with <span id=pizza-toppings></span> is $<span id=price></span> and will arrive in 20 minutes. Thanks for picking Piper's Pizza!</p>
+            <button type="submit" class="btn" id="order">Order pizza!</button>
+            <button type="button" class="btn" id="order-again">Order again!</button>
           </div>
         </div>
       </div>
     </form>
+    <div id="result">
+      <h4>Your pizza toppings:</h4>
+      <ul class="output-list">
+      </ul>
+      <h4>The total for your pizza is $<span id="price"></span> and will arrive in 20 minutes. Thanks for picking Piper's Pizza!</p>
+    </div>
   </div>
   </body>
 </html>
