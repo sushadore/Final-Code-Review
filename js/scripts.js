@@ -22,12 +22,13 @@ $(function(){
     newPizza.toppings.forEach(function(topping){
       $("ul").append("<li>" + topping + "</li>");
     });
+    
     $("#price").text(newPizza.sizePrice());
     $("#result").show();
     $("button#order").hide();
     $("button#order-again").show();
-
   });
+
   $("button#order-again").click(function() {
     $("form")[0].reset();
     $("ul.output-list").empty();

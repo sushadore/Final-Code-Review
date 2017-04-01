@@ -15,8 +15,15 @@
     <form>
       <div class="form-group">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-9">
             <h3>Toppings:</h3>
+          </div>
+          <div class="col-sm-3">
+            <h3>Size:</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="marinara">marinara</label>
             </div>
@@ -29,21 +36,22 @@
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="bacon">bacon</label>
             </div>
+          </div>
+          <div class="col-sm-3">
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="pepperoni">pepperoni</label>
             </div>
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="sausage">sausage</label>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <h3></h3>
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="artichokes">artichokes</label>
             </div>
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="peppers">peppers</label>
             </div>
+          </div>
+          <div class="col-sm-3">
             <div class="checkbox">
               <label><input type="checkbox" name="topping" value="jalapenos">jalapenos</label>
             </div>
@@ -57,10 +65,9 @@
               <label><input type="checkbox" name="topping" value="pineapple">pineapple</label>
             </div>
           </div>
-          <div class="col-sm-4">
-            <h3>Size:</h3>
+          <div class="col-sm-3">
             <div class="radio">
-              <label><input type="radio" name="size" value="0">small - 12 inch</label>
+              <label><input type="radio" name="size" value="0" checked>small - 12 inch</label>
             </div>
             <div class="radio">
               <label><input type="radio" name="size" value="2">medium - 14 inch</label>
@@ -72,7 +79,7 @@
               <label><input type="radio" name="size" value="6">extra large - 18 inch</label>
             </div>
             <button type="submit" class="btn" id="order">Order pizza!</button>
-            <button type="button" class="btn" id="order-again">Order again!</button>
+            <button type="button" class="btn" id="order-again">Change order</button>
           </div>
         </div>
       </div>
