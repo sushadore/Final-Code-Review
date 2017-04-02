@@ -4,7 +4,7 @@
 This is a basic web page which allows the user to price pizza based on topping and size inputs.
 
 ## Setup
-Link to page in any browser:
+Link to page in any browser: https://sushadore.github.io/Final-Code-Review/
 
 ## Specifications:
 * Prices pizza based on size.
