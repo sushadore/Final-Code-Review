@@ -12,14 +12,32 @@
     <div class="jumbotron">
       <h1>Piper's Pizza</h1>
     </div>
-    <form>
+    <h4>Welcome to Piper's. Base price for naked pizza listed below. Toppings are $1 each. Happy pizza-ing!</h4>
+    <div class="row">
+      <ul>
+      <div class="col-sm-3">
+        <li>Small 12" - $10</li>
+      </div>
+      <div class="col-sm-3">
+        <li>Medium 14" - $12</li>
+      </div>
+      <div class="col-sm-3">
+        <li>Large 16" - $14</li>
+      </div>
+      <div class="col-sm-3">
+        <li>Extra-large 18" - $16</li>
+      </div>
+      </ul>
+    </div>
+    <form id="pizza-choices">
       <div class="form-group">
         <div class="row">
           <div class="col-sm-9">
-            <h3>Toppings:</h3>
+            <h3>Topping options:</h3>
           </div>
           <div class="col-sm-3">
             <h3>Size:</h3>
+            <p>
           </div>
         </div>
         <div class="row">
@@ -67,16 +85,16 @@
           </div>
           <div class="col-sm-3">
             <div class="radio">
-              <label><input type="radio" name="size" value="0" checked>small - 12 inch</label>
+              <label><input type="radio" name="size" value="0" checked>small</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="size" value="2">medium - 14 inch</label>
+              <label><input type="radio" name="size" value="2">medium</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="size" value="4">large - 16 inch</label>
+              <label><input type="radio" name="size" value="4">large</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="size" value="6">extra large - 18 inch</label>
+              <label><input type="radio" name="size" value="6">extra large</label>
             </div>
             <button type="submit" class="btn" id="order">Order pizza!</button>
             <button type="button" class="btn" id="order-again">Change order</button>
@@ -85,10 +103,10 @@
       </div>
     </form>
     <div id="result">
-      <h4>Your pizza toppings:</h4>
+      <p>Chosen toppings:</p>
       <ul class="output-list">
       </ul>
-      <h4>The total for your pizza is $<span id="price"></span> and will arrive in 20 minutes. Thanks for picking Piper's Pizza!</p>
+      <p>The total for your pizza is $<span id="price"></span> and will arrive in 20 minutes. Thanks for picking Piper's Pizza!</p>
     </div>
   </div>
   </body>

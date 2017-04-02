@@ -8,7 +8,7 @@ Pizza.prototype.sizePrice=function(){
 }
 
 $(function(){
-  $("form").submit(function(event){
+  $("form#pizza-choices").submit(function(event){
     event.preventDefault();
 
     var pizzaSize = parseInt($("input:radio[name=size]:checked").val());
@@ -20,9 +20,9 @@ $(function(){
     });
 
     newPizza.toppings.forEach(function(topping){
-      $("ul").append("<li>" + topping + "</li>");
+      $("ul.output-list").append("<li>" + topping + "</li>");
     });
-    
+
     $("#price").text(newPizza.sizePrice());
     $("#result").show();
     $("button#order").hide();

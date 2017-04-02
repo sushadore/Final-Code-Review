@@ -5,8 +5,20 @@
   background-color: #EF875B;
 }
 
-button {
+h4 {
+  text-align: center;
+}
+#order {
   background-color: #EF875B;
+}
+
+#order-again {
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-weight: bold;
 }
 
 #result {
